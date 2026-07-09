@@ -1,25 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<html>
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-</html>
+</head>
 <body>
-    <div class = "flex-container">
-        <div class = visualContainer>
+    <button class = "expandButton"onclick="document.querySelector('.flex-container').classList.toggle('expanded')">Expand</button>
+    <div class = "flex-container" >
+        <div class = visualContainer tabindex = "0">
+            <!-- <img src = "https://images.pexels.com/photos/26546325/pexels-photo-26546325.jpeg" alt = macau; width = "100%"; height = "100%"> -->
+            <div class = "displayBox">
+                <img src = "https://raw.githubusercontent.com/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" alt = "odin logo" width="auto"; height = "50%";>
+                <span>SwanTravel</span>
+                
+            </div>
+            <div style = "color:white;">Click button for the log in page</div>
+            <!-- FIX ABOVE WITH CSS GRID -->
             
         </div>
         <div class = "contentContainer">
-            <div class = descriptionContainer></div>
+            
             <div class = "loginContainer">
+                <div class = "loginTitle">
+                    <strong>Log In</strong>
+                </div>
+                <div class = "formContainer">
+                    <form action = https://www.example.com/submit-form method = "post">
+                        <div class = "formItem">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="firstName" placeholder="Enter First Name">
+                        </div>
+                        <div class = "formItem">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" placeholder="Enter Last Name">
+                        </div>
+                        <div class = "formItem">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Enter Email">
+                        </div>
+                        <div class = "formItem">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" placeholder="Enter Password">
+                        </div>
+                        <div class = "formItem">
+                            <label for="confirmPassword">Confirm Password</label>
+                            <input type="password" id = "confirmPassword" name="confirmPassword" placeholder="Repeat Password">
+                        </div>
+                        <div class = "formItem">
+                            <label for="phone-number">Phone Number</label>
+                            <input type="number" id="phone-number" name="phone-number" placeholder="Enter Phone Number">
+                        </div>
+                        <div class = "formItem">
 
+                        </div>
+                        <div class = "formItem">
+                            <button type = "submit" id = "formItem" style = "width: 50%; background: linear-gradient(90deg, black, green, yellow); color: white;">Submit Info</button>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class = "finalContainer">
-                
+            <div class = descriptionContainer>
+                Sign up for our online travel service and get access to exclusive travel deals and discounts. Our platform offers a wide range of travel options, from flights and hotels to vacation packages and car rentals. Sign up now and start planning your next adventure!
             </div>
         </div>
     </div>
